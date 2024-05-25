@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --hijau: #16ff00;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+  }
+  header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+
+  nav {
+    width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  nav a:hover {
+    color: var(--hijau);
+  }
+  #beranda {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    /* background-color: red; */
+  }
+  .tulisan {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .konten-tulisan {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .konten-tulisan h1 {
+    color: white;
+    margin-bottom: 5%;
+  }
+  .konten-tulisan span {
+    color: var(--hijau);
+  }
+  .narasi-beranda {
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+  .narasi-beranda p {
+    font-size: 0.6rem;
+    color: white;
+  }
+  .tbl-beranda {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  .tbl-beranda a {
+    background-color: var(--hijau);
+    width: 20%;
+    height: 45%;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+  }
+  .tbl-beranda a:hover {
+    background-color: transparent;
+    border: solid 2px, var(--hijau);
+    color: white;
+  }
+  .tbl-beranda a:nth-child(2) {
+    background-color: transparent;
+    border: solid 2px, var(--hijau);
+    color: white;
+  }
+  .tbl-beranda a:nth-child(2):hover {
+    background-color: var(--hijau);
+    border: none;
+    color: black;
+  }
+
+  #materi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 5%;
+  }
+  .konten-materi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  .materi {
+    width: 50%;
+    height: 80%;
+    border: 2px solid #16ff00;
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 0 0 10px 1.5px #16ff00;
+  }
+  .gambar-materi {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gambar-materi {
+    color: var(--hijau);
+    font-size: 2.5rem;
+  }
+  .nama-materi {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nama-materi h1 {
+    font-size: 0.5rem;
+    color: white;
+  }
+  .narasi-materi {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .narasi-materi p {
+    font-size: 0.5rem;
+    overflow: scroll;
+    color: white;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .tbl-materi {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 10%;
+  }
+  .tbl-materi button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    background: linear-gradient(#16ff00, #096b00);
+    border: none;
+    padding: 2.5%;
+    border-radius: 5px;
+  }
+  .tbl-materi a {
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+  #galeri {
+    width: 100%;
+    height: 50%;
+  }
+  .konten-galeri {
+    padding: 5% 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 5%;
+    border: 4px solid var(--hijau);
+    border-radius: 15px;
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(#16ff00, #096b00);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  #slide-1 {
+    background-image: url(../images/gambar1.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  #slide-2 {
+    background-image: url(../images/gambar2.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  #slide-3 {
+    background-image: url(../images/gambar3.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  #slide-4 {
+    background-image: url(../images/gambar4.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  #gabung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+  }
+  .konten-gabung {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+  }
+  .konten-gabung h1 {
+    font-size: 0.7rem;
+    color: white;
+  }
+  .tbl-gabung {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tbl-gabung a {
+    width: 80%;
+    height: 30%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  .tbl-gabung a button {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(#16ff00, #096b00);
+    font-weight: 600;
+  }
+  .tbl-gabung button:hover {
+    background: linear-gradient(#096b00, #16ff00);
+  }
+
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+  }
+}
