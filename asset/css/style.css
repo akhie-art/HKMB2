@@ -347,6 +347,7 @@
     border: none;
     background: linear-gradient(#16ff00, #096b00);
     font-weight: 600;
+    color: black;
   }
   .tbl-gabung button:hover {
     background: linear-gradient(#096b00, #16ff00);
