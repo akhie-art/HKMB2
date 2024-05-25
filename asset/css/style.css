@@ -175,11 +175,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
   }
   .narasi-materi p {
     font-size: 0.5rem;
     color: white;
+    padding: 5%;
+    overflow: scroll;
+    height:95% ;
   }
   ::-webkit-scrollbar {
     display: none;
